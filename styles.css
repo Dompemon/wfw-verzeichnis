@@ -15,7 +15,7 @@ body {
 
 #prüfungen {
   font-style: italic;
-  border: 1px solid black;
+  border: 2px solid grey;
   border-radius: 10px;
   text-align: center;
   padding: 3px;
@@ -23,7 +23,7 @@ body {
 }
 
 hr {
-  min-width: 100%;
+  width: 100%;
   margin: 20px auto; 
   border: 2px solid rgba(0, 0, 0, 50%);
 }
@@ -69,10 +69,18 @@ h4 {
 
 .accordion li {
   list-style-type: square;
+  margin: 0.2rem 0 0.2rem 0;
 }
 
 .accordion li li {
   list-style-type: "➟ ";
+}
+
+ol {
+  border: 2px solid black;
+  border-radius: 10px;
+  background: rgb(231, 231, 209);
+  box-shadow: 2px 2px 0 black;
 }
 
 a {
