@@ -1,7 +1,7 @@
 body {
   font-family: Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
-  max-width: 1000px;
+  font-size: 20px;
+  max-width: 1200px;
   margin: 5vh auto;
   line-height: 1.6;
   background: darkslategrey;
@@ -10,6 +10,7 @@ body {
 .container {
   background: beige;
   padding: 50px;
+  border-radius: 10px;
 }
 
 #prüfungen {
@@ -19,6 +20,12 @@ body {
   text-align: center;
   padding: 3px;
   background-color: rgb(193, 218, 182);
+}
+
+hr {
+  min-width: 100%;
+  margin: 20px auto; 
+  border: 2px solid rgba(0, 0, 0, 50%);
 }
 
 h2 {
@@ -58,6 +65,14 @@ h4 {
 
 .accordion.active .caret {
   transform: rotate(180deg);
+}
+
+.accordion li {
+  list-style-type: square;
+}
+
+.accordion li li {
+  list-style-type: "➟ ";
 }
 
 a {
