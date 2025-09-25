@@ -49,7 +49,7 @@ h4 {
 }
 
 .accordion p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.25rem 0;
 }
 
 .accordion ul {
@@ -69,7 +69,7 @@ h4 {
 
 .accordion li {
   list-style-type: square;
-  margin: 0.2rem 0 0.2rem 0;
+  margin: 0.5rem 0 0.2rem 0;
 }
 
 .accordion li li {
@@ -77,10 +77,8 @@ h4 {
 }
 
 ol {
-  border: 2px solid black;
-  border-radius: 10px;
-  background: rgb(231, 231, 209);
-  box-shadow: 2px 2px 0 black;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 a {
