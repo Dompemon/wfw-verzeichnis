@@ -9,7 +9,117 @@ body {
 
 *::selection {
   background: rgb(6, 104, 6);
+  color: rgb(255, 253, 109);
+}
+
+.navbar {
+  position: sticky;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(141, 141, 141);
+  margin: 0 auto 5% auto;
+}
+
+.hamburger {
+  display: none; /* wird auf Mobile eingeblendet */
+  font-size: 1.5rem;
+  background: none;
+  border: none;
   color: white;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0.1rem auto;
+  gap: 0.2rem;
+  padding: 0.2rem 0.4rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+nav>ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  position: relative;
+  text-align: center;
+  flex: 0.3;
+  margin: 1% auto;
+  background: rgb(180, 221, 157);
+  border-radius: 5px;
+
+}
+
+nav li ul {
+  display: none;
+  min-width: 35vw;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0 0.5rem;
+  background: rgb(255, 255, 255);
+  border: 3px solid black;
+}
+
+nav li ul li {
+  margin: 0.5rem 0.3rem;
+  padding: auto 0.5rem;
+}
+
+nav li a:hover {
+  color: rgb(255, 253, 109);
+  transition: 0.3s;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav li:hover {
+  background: rgb(54, 105, 54);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 30px;  /* Höhe der Navbar */
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links ul {
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
 
 .container {
@@ -29,7 +139,7 @@ body {
 
 hr {
   width: 100%;
-  margin: 20px auto; 
+  margin: 20px auto;
   border: 2px solid rgba(0, 0, 0, 50%);
 }
 
