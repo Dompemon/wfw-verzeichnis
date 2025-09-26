@@ -7,6 +7,11 @@ body {
   background: darkslategrey;
 }
 
+*::selection {
+  background: rgb(6, 104, 6);
+  color: white;
+}
+
 .container {
   background: beige;
   padding: 50px;
@@ -138,6 +143,10 @@ th,
 td {
   border: 2px solid rgb(160 160 160);
   padding: 8px 10px;
+}
+
+abbr {
+  cursor: help;
 }
 
 footer {
